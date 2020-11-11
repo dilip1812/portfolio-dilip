@@ -1,0 +1,312 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+      font-family:Arial, Helvetica, sans-serif;
+  }
+
+  /* nav styling */
+  nav {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      background: black
+  }
+
+  .nav-flex-item-left {
+      width: 30%;
+      color: white;
+      padding: 1rem;
+      font-size: 2.2rem;
+      flex: display;
+      color: white;
+  }
+
+  .nav-flex-item-left .logo-split{
+      color: tomato;
+  }
+  
+  .nav-flex-item-right {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 60%;
+      padding: 1rem 0rem;
+      padding-right: 10rem;
+  }
+
+   .nav-flex-item-right li a{
+      /* padding: 0; */
+      color: white;
+      text-decoration: none;
+      font-size: 2rem;
+  }
+
+  li a:hover {
+    color: red;
+  }
+
+@media screen and (max-width:950px){
+   nav ,.nav-flex-item-left, .nav-flex-item-right{
+       text-align: center;
+       flex-direction: column;
+       padding: 1rem ;
+       width: 100%;
+   }
+}
+
+/* Intro styling */
+  .intro {
+        text-align: center;
+        background-color: #f0f0f0;
+        color: black;
+        height: 100vh;
+        padding-top: 10vh;
+        padding-left: -40rem;
+
+  }
+  
+  .intro .text-1{
+      font-size: 2.5rem;
+      color: black;
+      width: 100%;
+      margin-top: 2rem;
+    
+  }
+
+  .intro .text-2{
+      font-size: 3.5rem;
+      color: black;
+      width: 100%;
+
+  }
+
+  .intro .text-3{
+      font-size: 2rem;
+      color: black;
+      width: 100%;
+  }
+
+
+/* about styling */
+.about{
+    text-align: center;
+    background-color: #f0f0f0;
+    color: black;
+    height: 100vh;
+    padding-top: 2rem;
+}
+
+.about .title{
+    text-decoration: underline;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.about-description{
+    padding-top: 2rem ;
+}
+
+.about-description p{
+    padding-top: 1rem;
+    color: black;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.skills-title{
+    text-decoration: underline;
+    padding-top: 2rem;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.skills-list{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.skills-list .skills{
+    padding-left: 8rem;
+    padding-right: 8rem;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    height: 7rem;
+}
+
+.skills-list .skills h3{
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.skills-list .skills .progress-bar{
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.skills-list .skills .python-bar{
+    height: 2rem;
+    width: 85%;
+    background: chartreuse;
+    border-radius: 10px;
+}
+
+.skills-list .skills .javascript-bar{
+    height: 2rem;
+    width: 75%;
+    background: chartreuse;
+    border-radius: 10px;
+}
+
+.skills-list .skills .DataStructures-bar{
+    height: 2rem;
+    width: 65%;
+    background: chartreuse;
+    border-radius: 10px;
+}
+
+.skills-list .skills .MySQL-bar{
+    height: 2rem;
+    width: 60%;
+    background: chartreuse;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:900px){
+    .about{
+        height: auto;
+    }
+}
+
+
+/* project styling */
+.project{
+    height: auto;
+    background-color: #f0f0f0;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.project-title{
+    text-decoration: underline;
+    font-size: 2.5rem;
+    color: black;
+
+}
+
+.project-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: #f0f0f0;
+    box-sizing: border-box;
+    padding: 2rem;
+    height: 100vh;
+}
+
+.project-1{
+   
+    margin: 1rem;
+    flex: 1;
+
+}
+
+.project-1 h1{
+    font-size: 2rem;
+}
+
+.project-1 p{
+    color: black;
+    width: 100%;
+    font-size: 1.5rem;
+    
+}
+
+.resize{
+    padding: 2rem;
+    height: 50%;
+    width: 100%;
+}
+
+@media screen and (max-width:990px){
+    .project-list{
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/* contact styling */
+.contact{
+    height: 120vh;
+    background:#f0f0f0;
+}
+
+.contact h1{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2.5rem;
+    color: teal;
+}
+
+.form{
+    margin: 5rem auto;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    border-radius: 1rem;
+    border: 1px solid black;
+    background: gray;
+    font-size: 2rem;
+}
+
+.first-name,.last-name,.message{
+    margin: 3rem;
+    
+}
+
+.submit-button{
+  background-color: black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.fname,.lname{
+    height: 2rem;
+    width: 50%;
+    border-radius: 0.5rem;
+}
+
+.message-input{
+    height: 5rem;
+    width: 50%;
+    border-radius: 0.5rem;
+
+}
+
+.social-logo{
+    text-align: center;
+}
+
+@media screen and (max-width:950px){
+    .form{
+        height: auto;
+    }
+}
